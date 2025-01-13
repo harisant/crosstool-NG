@@ -13,7 +13,6 @@ if [ "${CT_ISL}" = "y" ]; then
 
 # Download ISL
 do_isl_get() {
-    CT_DoStep INFO "target url https://gcc.gnu.org/pub/gcc/infrastructure"
     CT_GetFile "isl-${CT_ISL_VERSION}" \
         https://gcc.gnu.org/pub/gcc/infrastructure
 }

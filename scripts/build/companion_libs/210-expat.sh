@@ -14,7 +14,8 @@ if [ "${CT_EXPAT_TARGET}" = "y" -o "${CT_EXPAT}" = "y" ]; then
 # }
 do_expat_get() {
     CT_GetFile "expat-${CT_EXPAT_VERSION}" .tar.gz    \
-               https://github.com/jeremyd2019/crosstool-NG/releases/tag/xtensa-1.22.x-g46f160f
+               https://repository.timesys.com/buildsources/e/expat/expat-2.1.0 \
+               https://github.com/libexpat/libexpat/releases/download/R_2_1_0
 }
 
 do_expat_extract() {
